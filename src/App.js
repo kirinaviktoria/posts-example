@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { ManagePost } from './components/ManagePost/ManagePost';
+import { Posts } from './components/Posts/Posts';
+import { TodoList } from './components/TodoList/TodoList';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='title'>Посты</h1>
+
+      <div className='wrapper'>
+        <TodoList/>
+        <div className='content'>
+          <Posts/>
+          <ManagePost/>
+        </div>
+      </div>
+
+
+    
     </div>
   );
 }

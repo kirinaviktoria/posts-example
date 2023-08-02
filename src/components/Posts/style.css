@@ -1,0 +1,6 @@
+.posts {
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid #333;
+  padding: 10px;
+}
