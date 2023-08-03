@@ -34,26 +34,21 @@ const TODO_LIST = [
   },
   {
     id: 7,
-    name: 'Изменение поста',
-    completed: false
-  },
-  {
-    id: 8,
     name: 'Детальная страница поста',
     completed: false
   },
   {
-    id: 9,
+    id: 8,
     name: 'Комментарии к посту на детальной странице',
     completed: false
   },
   {
-    id: 10,
+    id: 9,
     name: 'Пагинация постов',
     completed: false
   },
   {
-    id: 11,
+    id: 10,
     name: 'Фильтрация по userId',
     completed: false
   }

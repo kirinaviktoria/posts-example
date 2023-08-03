@@ -1,4 +1,4 @@
-import { ManagePost } from './components/ManagePost/ManagePost';
+
 import { Posts } from './components/Posts/Posts';
 import { TodoList } from './components/TodoList/TodoList';
 
@@ -13,7 +13,7 @@ function App() {
         <TodoList/>
         <div className='content'>
           <Posts/>
-          <ManagePost/>
+
         </div>
       </div>
 
