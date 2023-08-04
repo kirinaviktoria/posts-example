@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Info } from './components/Info/Info';
 
 
 export const DetailPost = ({ postId }) => {
@@ -8,18 +9,15 @@ export const DetailPost = ({ postId }) => {
     fetch(`https://jsonplaceholder.typicode.com/posts/${postId}`)
     .then((response) => response.json())
     .then((post) => setPost(post));
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${postId}/comments`)
+    .then((response) => response.json())
+    .then((comments) => console.log(comments));
   }, [postId])
 
   return (
     <>
-      {post && 
-      <div>
-        <h1>Detail Post - {postId}</h1>
-        <div><b>Title:</b> {post.title}</div>
-        <div style={{maxWidth: '200px'}}><b>Body:</b> {post.body}</div>
-        <div><b>UserID:</b> {post.userId}</div>
-      </div>
-      }
+      {post && <Info key={post.id} post={post}/>}
     </>
   )
 }
