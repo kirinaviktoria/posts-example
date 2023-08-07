@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  color: rgb(95, 113, 160);
+  font-weight: 500;
+  font-size: 20px;
+  gap: 15px;
+}
+
+.pagination-item {
+  cursor: pointer;
+}
+
+.pagination-item:hover {
+  color: tomato;
+}
+
+.active {
+  color: rgb(220, 38, 98);
+}
